@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Fade In on Scroll
-const images = document.querySelectorAll('.featured-image, h1, h2, h3, p, aside');
+const images = document.querySelectorAll('.featured-image, h1, h2, h3, p, aside, nav a');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
@@ -24,6 +24,6 @@ const observer = new IntersectionObserver((entries) => {
 images.forEach(img => {
     img.style.opacity = '0';
     img.style.transform = 'scale(0.97)';
-    img.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
+    img.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(img);
 });
