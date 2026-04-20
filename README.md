@@ -9,4 +9,5 @@ Proyek ini disusun untuk memenuhi tugas mata kuliah "Pemrograman Web"
 Nama    : MUHAMAD DIKRULLOH
 NIM     : 2430511076
 Kelas   : 4B
+Prodi   : Teknik Informatika
 ```
