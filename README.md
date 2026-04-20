@@ -1,0 +1,1 @@
+![Screenshot of the webiste](./assets/image/screenshot.png)
