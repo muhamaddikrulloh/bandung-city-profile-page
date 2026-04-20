@@ -10,7 +10,7 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 });
 
 // Fade In on Scroll
-const images = document.querySelectorAll('.featured-image, h1, h2, h3, p, aside, nav a');
+const images = document.querySelectorAll('.featured-image, h1, h2, h3, p, nav a, figure, table');
 const observer = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         if (entry.isIntersecting) {
