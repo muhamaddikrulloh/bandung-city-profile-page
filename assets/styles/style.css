@@ -79,9 +79,11 @@ nav li {
 nav {
     background-color: #00a2c6;
     padding: 5px;
-
     position: sticky;
+    z-index: 1000;
     top: 0;
+
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 main{
@@ -123,6 +125,8 @@ aside td:nth-child(3) {
 
 header {
     display: inline;
+    top: 0;
+    z-index: 1000;
 }
 
 /* Perangkat dengan lebar layar 1200px dan di bawahnya */
