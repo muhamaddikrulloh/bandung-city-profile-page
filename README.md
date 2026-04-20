@@ -3,6 +3,7 @@ Proyek ini disusun untuk memenuhi tugas mata kuliah "Pemrograman Web"
 
 ## Screenshot Tampilan Website
 ![Screenshot of the webiste](./assets/image/screenshot.png)
+Atau Kunjungi Link Berikut: <https://bandungcityprofile.vercel.app/>
 
 ## Disusun Oleh:
 ```
