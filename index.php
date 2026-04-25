@@ -11,6 +11,7 @@ $tahunSekarang = date('Y');
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profil Kota Bandung</title>
+    <link rel="icon" href="assets/image/favicon.ico" type="favicon.ico" />
 
     <link rel="stylesheet" href="assets/styles/style.css" />
     <script src="assets/scripts/script.js" defer></script>
