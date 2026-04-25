@@ -1,8 +1,7 @@
 <?php
-// index.php
 require_once 'config/database.php';
 
-// Ambil semua artikel dari database, diurutkan berdasarkan kolom `urutan`
+
 $query         = $koneksi->query('SELECT slug, judul, konten, gambar, alt_gambar FROM artikel ORDER BY urutan ASC');
 $daftarArtikel = $query->fetchAll();
 $tahunSekarang = date('Y');
@@ -24,13 +23,13 @@ $tahunSekarang = date('Y');
   <body>
 
     <header>
-      <!-- Sampul / Banner atas -->
+
       <div class="jumbotron">
         <h1>Kota Bandung</h1>
         <p>Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
       </div>
 
-      <!-- Navigasi sticky -->
+
       <nav>
         <ul>
           <?php foreach ($daftarArtikel as $artikel): ?>
@@ -46,14 +45,12 @@ $tahunSekarang = date('Y');
 
     <main>
 
-      <!-- Kolom kiri: daftar artikel -->
       <div id="content">
         <?php if (empty($daftarArtikel)): ?>
           <p>Belum ada konten tersedia.</p>
         <?php else: ?>
           <?php foreach ($daftarArtikel as $artikel): ?>
 
-            <!-- id diambil dari slug DB (sejarah / geografis / wisata) -->
             <article id="<?= htmlspecialchars($artikel['slug']) ?>" class="card">
 
               <h2><?= htmlspecialchars($artikel['judul']) ?></h2>
@@ -66,7 +63,7 @@ $tahunSekarang = date('Y');
                 />
               <?php endif; ?>
 
-              <!-- Konten HTML yang tersimpan di database -->
+
               <?= $artikel['konten'] ?>
 
             </article>
@@ -74,9 +71,7 @@ $tahunSekarang = date('Y');
           <?php endforeach; ?>
         <?php endif; ?>
       </div>
-      <!-- /content -->
 
-      <!-- Kolom kanan: profil kota -->
       <aside>
         <article class="profile">
 
@@ -117,12 +112,12 @@ $tahunSekarang = date('Y');
 
         </article>
       </aside>
-      <!-- /aside -->
+
 
     </main>
 
     <footer>
-      <!-- {tahun} diganti langsung dari PHP, JS replace() tidak diperlukan lagi -->
+
       <p>Profile Kota Bandung &#169; <?= $tahunSekarang ?> | Muhamad Dikrulloh</p>
     </footer>
 
