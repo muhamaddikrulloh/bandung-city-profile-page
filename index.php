@@ -1,3 +1,18 @@
+<?php
+// index.php
+require_once 'config/database.php';
+
+// Ambil semua artikel dari database, diurutkan berdasarkan kolom `urutan`
+function ambilSemuaArtikel(): array {
+    $pdo  = getConnection();
+    $stmt = $pdo->query('SELECT slug, judul, konten, gambar, alt_gambar FROM artikel ORDER BY urutan ASC');
+    return $stmt->fetchAll();
+}
+
+$daftarArtikel = ambilSemuaArtikel();
+$tahunSekarang = date('Y');
+?>
+
 <!DOCTYPE html>
 <html>
   <head>

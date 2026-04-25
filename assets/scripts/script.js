@@ -27,8 +27,3 @@ images.forEach(img => {
     img.style.transition = 'opacity 0.8s ease, transform 0.8s ease';
     observer.observe(img);
 });
-
-// Dinacim year in footer
-const footer = document.querySelector('footer p');
-const currentYear = new Date().getFullYear();
-footer.innerHTML = footer.innerHTML.replace('{tahun}', currentYear);
