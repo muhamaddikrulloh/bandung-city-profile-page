@@ -1,9 +1,8 @@
 <?php
 require_once 'config/database.php';
 
-
-$query         = $koneksi->query('SELECT slug, judul, konten, gambar, alt_gambar FROM artikel ORDER BY urutan ASC');
-$daftarArtikel = $query->fetchAll();
+$stmt          = $pdo->query('SELECT slug, judul, konten, gambar, alt_gambar FROM artikel ORDER BY urutan ASC');
+$daftarArtikel = $stmt->fetchAll();
 $tahunSekarang = date('Y');
 ?>
 <!DOCTYPE html>
@@ -28,7 +27,6 @@ $tahunSekarang = date('Y');
         <h1>Kota Bandung</h1>
         <p>Kota metropolitan terbesar di Provinsi Jawa Barat, sekaligus menjadi ibu kota provinsi tersebut.</p>
       </div>
-
 
       <nav>
         <ul>
@@ -62,7 +60,6 @@ $tahunSekarang = date('Y');
                   alt="<?= htmlspecialchars($artikel['alt_gambar'] ?? $artikel['judul']) ?>"
                 />
               <?php endif; ?>
-
 
               <?= $artikel['konten'] ?>
 
