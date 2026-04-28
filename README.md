@@ -5,7 +5,7 @@ Proyek ini disusun untuk memenuhi tugas mata kuliah "Pemrograman Web"
 ![Screenshot of the webiste](./assets/image/screenshot.png)
 
 ## Screenshot Tampilan Database
-![Screenshot database](./assets/image/screenshot_db.png.png)
+![Screenshot database](./assets/image/screenshot_db.png)
 
 ## Disusun Oleh:
 ```
