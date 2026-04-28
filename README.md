@@ -13,33 +13,25 @@ Proyek ini disusun untuk memenuhi tugas mata kuliah "Pemrograman Web"
 
 ## Struktur Project
 ```
-├── assets
+├── assets      →   Menyimpan file statis seperti gambar
 │ └── image
 │
-├── scripts
+├── scripts     →   Berisi file JavaScript
 │ └── script.js
 │
-├── styles
+├── styles      →   Berisi file CSS
 │ └── style.css
 │
-├── config
+├── config      →   Konfigurasi website (koneksi database)
 │ └── database.php
 │
-├── index.php
-└── README.md
+├── index.php   →   Halaman utama aplikasi
+└── README.md   →   Dokumentasi project
 ```
-
-### Keterangan
-- **assets/**   → Menyimpan file statis seperti gambar
-- **scripts/**  → Berisi file JavaScript
-- **styles/**   → Berisi file CSS
-- **config/**   → Konfigurasi aplikasi (koneksi database)
-- **index.php** → Halaman utama aplikasi
-- **README.md** → Dokumentasi project
 
 ---
 
-## Disusun Oleh:
+## Disusun Oleh
 ```
 Nama    : MUHAMAD DIKRULLOH
 NIM     : 2430511076
